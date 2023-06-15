@@ -1,0 +1,10 @@
+# Install cronjob on your 2023 AMI instance
+sudo yum install cronie -y
+sudo systemctl enable crond.service
+sudo systemctl start crond.service
+
+# maintain crontab files for individual users
+crontab -e
+
+# cron job entry which backs up the files every 5 minutes
+*/1 * * * * /home/ec2-user/Project-101/Third_Part/backup.sh
