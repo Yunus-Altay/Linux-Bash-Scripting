@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 read -p "Input a number: " number
 
 if [[ $number  -gt 10 ]]; then

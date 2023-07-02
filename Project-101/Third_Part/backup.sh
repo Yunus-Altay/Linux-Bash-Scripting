@@ -24,7 +24,7 @@ SOURCE_FOLDER="/home/ec2-user/data"
 DESTINATION_FOLDER="/mnt/backup"
 TIMESTAMP=$(date +"%Y%m%d%H%M%S")
 HOSTNAME=$(hostname -s)
-BACKUP_FILE="backup_${HOSTNAME}_${TIMESTAMP}_$(basename $SOURCE_FOLDER).tar.tgz"
+BACKUP_FILE="backup_${HOSTNAME}_${TIMESTAMP}_$(basename $SOURCE_FOLDER).tgz"
 
 echo "Backup process initiating"
 

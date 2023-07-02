@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 read -p "Input first number: " first_number
 read -p "Input second number: " second_number
 read -p "Select math operation
